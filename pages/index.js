@@ -172,7 +172,7 @@ export default function Home() {
         <title>宮本琉太 | Web制作・サービス企画</title>
         <meta
           name="description"
-          content="福岡大学法学部の学生。React / TypeScriptでの開発やサービス企画に取り組んでいます。学習アプリ「おぼえこ」、新規事業企画「MachiQuest」などの制作をまとめたポートフォリオです。"
+          content="福岡大学法学部の学生。AIを活用したWeb制作やサービス企画に取り組んでいます。新規事業企画「マチクエ」、歴史学研究会の運営などをまとめたポートフォリオです。"
         />
         <meta name="theme-color" content="#ffffff" />
         <meta name="color-scheme" content="light" />
@@ -181,7 +181,7 @@ export default function Home() {
         <meta property="og:title" content="宮本琉太 | Web制作・サービス企画" />
         <meta
           property="og:description"
-          content="福岡大学法学部の学生。React / TypeScriptでの開発やサービス企画、学習アプリ「おぼえこ」・新規事業企画「MachiQuest」などをまとめたポートフォリオ。"
+          content="福岡大学法学部の学生。AIを活用したWeb制作やサービス企画、新規事業企画「マチクエ」、歴史学研究会の運営などをまとめたポートフォリオ。"
         />
         <meta property="og:url" content="https://ryuta-miyamoto.lolipop-now.app/" />
         <meta name="twitter:card" content="summary" />
@@ -211,17 +211,17 @@ export default function Home() {
               宮本 琉太
             </h1>
             <p className="hero-desc" data-reveal style={{ '--reveal-delay': '120ms' }}>
-              Web制作やサービス企画に取り組んでいます。
+              AIを活用したWeb制作やサービス企画に取り組んでいます。
               <br />
-              React / TypeScriptを使った開発や、AIを活用した企画・制作をしています。
+              ニコニコ生放送で顔出し配信も行っています。
             </p>
             <div className="hero-actions" data-reveal style={{ '--reveal-delay': '180ms' }}>
-              <a href="#work-oboeko" className="hero-link">
-                おぼえこ
+              <a href="#work-machiquest" className="hero-link">
+                マチクエ
                 <span className="arrow" aria-hidden="true" />
               </a>
-              <a href="#work-machiquest" className="hero-link">
-                MachiQuest
+              <a href="#work-oboeko" className="hero-link">
+                おぼえこ（制作中）
                 <span className="arrow" aria-hidden="true" />
               </a>
             </div>
@@ -238,19 +238,29 @@ export default function Home() {
             <div className="section-body">
               <div className="highlight-grid">
                 <div className="highlight-card" data-reveal>
-                  <span className="highlight-eyebrow">個人開発</span>
-                  <strong className="highlight-stat">Web版 公開中</strong>
-                  <p>おぼえこの企画からUI設計・実装・公開まで担当</p>
+                  <span className="highlight-eyebrow">配信活動</span>
+                  <strong className="highlight-stat">15位入賞</strong>
+                  <p>
+                    ニコニコ生放送の「年末年始 駅サイネージ出演イベント」（2025年開催）で15位に入賞し、駅のサイネージ広告に掲載されました。
+                    <a
+                      className="inline-link"
+                      href="https://blog.nicovideo.jp/niconews/261898.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      イベントの結果発表ページ
+                    </a>
+                  </p>
                 </div>
                 <div className="highlight-card" data-reveal style={{ '--reveal-delay': '90ms' }}>
-                  <span className="highlight-eyebrow">新規事業企画</span>
+                  <span className="highlight-eyebrow">サービス企画</span>
                   <strong className="highlight-stat">優秀賞</strong>
-                  <p>IT企業のサマーインターンで新規事業を企画</p>
+                  <p>IT企業のサマーインターンで、商店街の集客を支援する「マチクエ」を企画・提案しました。</p>
                 </div>
                 <div className="highlight-card" data-reveal style={{ '--reveal-delay': '180ms' }}>
-                  <span className="highlight-eyebrow">組織運営</span>
-                  <strong className="highlight-stat">約30人規模</strong>
-                  <p>歴史学研究会を現役部員一桁から立て直し</p>
+                  <span className="highlight-eyebrow">研究会の運営</span>
+                  <strong className="highlight-stat">約5人 → 約30人</strong>
+                  <p>部員と協力して新歓企画や活動内容を見直し、研究会の所属者を増やしました。</p>
                 </div>
               </div>
             </div>
@@ -262,150 +272,10 @@ export default function Home() {
               <span aria-hidden="true" className="index">
                 02
               </span>
-              <h2>Featured Works</h2>
+              <h2>Featured Work</h2>
             </div>
             <div className="section-body">
               <div className="featured-list">
-                {/* --- おぼえこ --- */}
-                <article id="work-oboeko" className="featured expandable" data-reveal>
-                  <div className="mock mock--oboeko" aria-hidden="true">
-                    <div className="mock-topbar">
-                      <span />
-                      <span />
-                      <span />
-                    </div>
-                    <div className="mock-oboeko-body">
-                      <div className="mock-oboeko-header">
-                        <span className="mock-seal">憶</span>おぼえこ
-                      </div>
-                      <div className="mock-flow">
-                        <div className="mock-step">
-                          <span className="mock-step-label">1. デッキを選ぶ</span>
-                          <div className="mock-oboeko-cards">
-                            <div className="mock-deck" style={{ '--c': '#8a3324' }}>
-                              <span>01</span>会社法 判例
-                            </div>
-                            <div className="mock-deck" style={{ '--c': '#3f5d47' }}>
-                              <span>02</span>サンプル：一般常識
-                            </div>
-                          </div>
-                        </div>
-                        <div className="mock-step">
-                          <span className="mock-step-label">2. カードで確認する</span>
-                          <div className="mock-flashcard">
-                            <span className="mock-flashcard-label">もんだい</span>
-                            <span className="mock-flashcard-text">取締役の善管注意義務とは？</span>
-                            <div className="mock-flashcard-actions">
-                              <span>まだ</span>
-                              <span className="is-primary">覚えた</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="mock-step">
-                          <span className="mock-step-label">3. 結果を確認する</span>
-                          <div className="mock-oboeko-strip">
-                            今日 4<span>/10</span>
-                          </div>
-                          <p className="mock-result">3枚中2枚を「覚えた」に</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="featured-body">
-                    <div className="featured-top">
-                      <span className="featured-no">01</span>
-                      <h3>おぼえこ</h3>
-                      <span className="status-pill">Web版 公開中</span>
-                    </div>
-                    <ul className="featured-meta">
-                      <li>個人開発</li>
-                      <li>企画・UI設計・実装</li>
-                      <li>継続改善中</li>
-                    </ul>
-                    <p className="featured-tagline">自分の教材を、一問一答で繰り返せる暗記学習アプリ</p>
-                    <dl className="featured-facts">
-                      <div>
-                        <dt>背景</dt>
-                        <dd>
-                          授業や資格勉強で覚えたい内容を、紙へ書き直したり、復習する範囲を毎回選んだりする手間を減らすために制作しました。
-                        </dd>
-                      </div>
-                      <div>
-                        <dt>設計した体験</dt>
-                        <dd>
-                          覚えたい内容をデッキに分け、問題・答え・補足を登録できます。確認モードでは未習得・苦手なカードを優先し、その日の学習量や連続学習日数も記録できるようにしました。
-                        </dd>
-                      </div>
-                      <div>
-                        <dt>実装上の工夫</dt>
-                        <dd>
-                          ReactとTypeScriptで画面と状態を設計しています。学習データは端末内へ保存し、JSONによるバックアップと復元にも対応しています。
-                        </dd>
-                      </div>
-                    </dl>
-                    <p className="featured-tech">React / TypeScript / Vite（保存はブラウザ内、サーバー不要）</p>
-                    <div id="oboeko-detail" className="expandable-body" hidden>
-                      <div className="expandable-inner">
-                        <div className="proj-group">
-                          <span className="featured-group-label">主な機能</span>
-                          <ul className="mini-list">
-                            <li>デッキの作成・編集・削除</li>
-                            <li>問題の手入力（表・裏・補足）</li>
-                            <li>苦手なカードを優先した確認モード</li>
-                            <li>1日の目標枚数と連続学習日数の記録</li>
-                            <li>学習データの書き出し・読み込み（JSON）</li>
-                          </ul>
-                        </div>
-                        <div className="proj-group">
-                          <span className="featured-group-label">設計・実装上の判断</span>
-                          <ul className="mini-list">
-                            <li>復習の優先度は間隔反復（SRS）の日付計算ではなく、間違えた回数をもとにしたシンプルな並び替えにとどめている</li>
-                            <li>学習データは外部に送らず端末内（localStorage）だけに保存し、書き出したJSONで引っ越しできるようにした</li>
-                            <li>配色はよくある紫・青のグラデーションを避け、落ち着いた色を使っている</li>
-                          </ul>
-                        </div>
-                        <div className="proj-group">
-                          <span className="featured-group-label">次に改善したいこと（未実装）</span>
-                          <ul className="mini-list">
-                            <li>忘却のタイミングに合わせた復習日の自動計算（SRS）</li>
-                            <li>写真やPDFからの問題作成</li>
-                            <li>SPIやCABなど適性検査形式への対応</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="featured-actions">
-                      <a
-                        className="btn btn--solid"
-                        href="https://oboeko.lolipop-now.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        アプリを試す
-                      </a>
-                      <a
-                        className="btn"
-                        href="https://github.com/Rita8300/oboeko"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        GitHubでコードを見る
-                      </a>
-                      <button
-                        type="button"
-                        className="btn btn--toggle"
-                        data-toggle
-                        data-label="詳しく見る"
-                        aria-expanded="false"
-                        aria-controls="oboeko-detail"
-                      >
-                        <span className="toggle-label">詳しく見る</span>
-                        <span className="toggle-chevron" aria-hidden="true" />
-                      </button>
-                    </div>
-                  </div>
-                </article>
-
                 {/* --- MachiQuest --- */}
                 <article id="work-machiquest" className="featured expandable" data-reveal style={{ '--reveal-delay': '90ms' }}>
                   <div className="mock mock--machiquest" aria-hidden="true">
@@ -431,11 +301,15 @@ export default function Home() {
                   </div>
                   <div className="featured-body">
                     <div className="featured-top">
-                      <span className="featured-no">02</span>
-                      <h3>MachiQuest</h3>
-                      <span className="status-pill status-pill--award">IT企業 サマーインターン 優秀賞</span>
+                      <span className="featured-no">01</span>
+                      <h3>マチクエ（MachiQuest）</h3>
+                      <span className="status-pill">新規事業の企画案</span>
+                      <span className="status-pill status-pill--award">インターン優秀賞</span>
                     </div>
-                    <p className="featured-tagline">個人店の集客とゲーミフィケーションを組み合わせた新規事業企画</p>
+                    <p className="featured-tagline">
+                      商店街の集客をテーマに、街歩きとゲーム要素を組み合わせたサービス「マチクエ」を企画しました。利用者だけでなく店舗や運営者の視点も踏まえ、対象顧客や収益モデル、実証方法を検討し、IT企業のサマーインターンで優秀賞を受賞しました。
+                    </p>
+                    <p className="featured-note">運営中のサービスではなく、実証実験も未実施の企画案です。数値や期間は計画上の想定です。</p>
                     <dl className="featured-facts">
                       <div>
                         <dt>想定顧客</dt>
@@ -450,7 +324,7 @@ export default function Home() {
                       <div>
                         <dt>サービス概要</dt>
                         <dd>
-                          LINEミニアプリで、来街者ひとりひとりに合わせた「今日のクエスト」をAIが生成。3〜4店舗を巡るルートを提示し、チェックインで来街データを可視化する。
+                          LINEミニアプリで、来街者ひとりひとりに合わせた「今日のクエスト」をAIが生成する設計。3〜4店舗を巡るルートを提示し、チェックインで来街データを可視化する想定。
                         </dd>
                       </div>
                       <div>
@@ -463,25 +337,25 @@ export default function Home() {
                     <div id="machiquest-detail" className="expandable-body" hidden>
                       <div className="expandable-inner">
                         <div className="proj-group">
-                          <span className="featured-group-label">収益モデル</span>
+                          <span className="featured-group-label">収益モデル（案）</span>
                           <p className="featured-detail-text">
                             商店街振興組合などとの年間ライセンス契約を本命に、立ち上げ期のPoC受託、単店向けの成果報酬型を組み合わせる案。
                           </p>
                         </div>
                         <div className="proj-group">
-                          <span className="featured-group-label">PoC案</span>
-                          <p className="featured-detail-text">鹿児島・天文館エリアで20〜30店舗×6〜8週間の実証実験を想定。</p>
+                          <span className="featured-group-label">実証実験の案（未実施）</span>
+                          <p className="featured-detail-text">鹿児島・天文館エリアで20〜30店舗×6〜8週間の実証実験を行う計画。</p>
                         </div>
                         <div className="proj-group">
-                          <span className="featured-group-label">KPI</span>
+                          <span className="featured-group-label">測定したい指標（案）</span>
                           <p className="featured-detail-text">
-                            クエスト開始率、チェックイン完遂率、1人あたり訪問店舗数、新規開拓率、再回遊率など。
+                            クエスト開始率、チェックイン完遂率、1人あたり訪問店舗数、初めて訪れた店の数、再び回遊した割合など。
                           </p>
                         </div>
                         <div className="proj-group">
-                          <span className="featured-group-label">AI活用</span>
+                          <span className="featured-group-label">AI活用（想定）</span>
                           <p className="featured-detail-text">
-                            利用者の好み・行動履歴と、店舗側の情報（来てほしい時間帯や特徴など）を掛け合わせ、個別のクエストとルートを自動生成する。
+                            利用者の好み・行動履歴と、店舗側の情報（来てほしい時間帯や特徴など）を掛け合わせ、個別のクエストとルートを自動生成する想定。
                           </p>
                         </div>
                         <div className="proj-group">
@@ -530,7 +404,7 @@ export default function Home() {
                 <article className="exp-card expandable" data-reveal>
                   <h3>歴史学研究会</h3>
                   <p className="exp-summary">
-                    現役部員が一桁まで減少していた研究会で、新歓企画や活動内容を見直しました。歴史初心者でも参加しやすいクイズ企画や史跡見学旅行などを実施し、登録・参加希望者を含め約30人規模まで拡大しました。
+                    部員と協力し、歴史初心者にも活動の楽しさが伝わるよう、新歓企画を見直しました。歴史クイズの難易度や進行を改善し、既存の史跡見学を入部前に参加できる日帰り体験として活用しました。
                   </p>
                   <ul className="exp-tags">
                     <li>企画</li>
@@ -541,13 +415,13 @@ export default function Home() {
                   <div id="exp-history-detail" className="expandable-body" hidden>
                     <div className="expandable-inner">
                       <p className="featured-detail-text">
-                        当初は約5人まで減り、研究発表中心の活動が新入生には堅く見えていた。歴史クイズを企画し、もともとあった史跡見学を新入生向けの体験企画として活用しながら、参加者の反応やアンケートをもとに改善を重ねた。
+                        研究発表中心の活動が新入生には堅く見えていたため、部員みんなで案を出し合って見直しました。所属者は、もともと約4〜5人でしたが、2年次の4月に約10人、3年次の4月に約30人になりました（部員全員で取り組んだ結果です）。
                       </p>
                       <ul className="mini-list">
-                        <li>歴史クイズを企画し、参加者の反応を見ながら形式を改善</li>
-                        <li>既存の史跡見学を、新入生が入部前に体験できる企画として活用</li>
-                        <li>QRコード経由のアンケートで参加理由や反応を確認</li>
-                        <li>史跡見学の申込みから入部までの導線を設計</li>
+                        <li>初心者も参加しやすいよう、クイズの難易度、進行、解説、広報を見直した</li>
+                        <li>既存の史跡見学を、新入生が入部前に参加できる春の日帰り体験として活用した</li>
+                        <li>QRコードのアンケートから、体験参加や入部申し込みにつなげた</li>
+                        <li>夏の京都・奈良・大阪への2泊3日の旅行（別の企画）では、関心に応じた班ごとに行き先を考える形で行い、その魅力を新歓でも伝えた</li>
                       </ul>
                       <p className="featured-detail-text">
                         自分たちが良いと思うものを押し出すだけでなく、相手が参加しづらい理由を考え、実際の反応をもとに改善する重要性を学んだ。
@@ -628,13 +502,13 @@ export default function Home() {
                 </article>
 
                 <article className="exp-card expandable" data-reveal>
-                  <h3>インターン・企業研究</h3>
+                  <h3>インターン</h3>
                   <p className="exp-summary">
-                    IT・SIer・インフラ・金融など、複数企業のインターンや企業研究に参加。新規事業の企画・提案を経験しました（詳しくは
-                    <a href="#work-machiquest">MachiQuest</a>を参照）。
+                    IT分野のインターンに参加しました。サマーインターンでは、新規事業「
+                    <a href="#work-machiquest">マチクエ</a>」を企画・提案し、優秀賞を受賞しました。
                   </p>
                   <ul className="exp-tags">
-                    <li>企業研究</li>
+                    <li>IT</li>
                     <li>新規事業</li>
                   </ul>
                   <div id="exp-intern-detail" className="expandable-body" hidden>
@@ -642,11 +516,9 @@ export default function Home() {
                       <ul className="companies">
                         <li>IT（Webサービス）</li>
                         <li>SIer</li>
-                        <li>インフラ（電力）</li>
-                        <li>金融（地方銀行）</li>
                       </ul>
                       <p className="featured-detail-text">
-                        業種の異なる企業のインターンや企業研究に参加。AIによる業務効率化だけでなく、空いた時間を新しい提案や顧客対応へ振り向ける考え方に関心を持った。（社名は伏せています）
+                        参加したインターンの業種です（社名は伏せています）。企画の詳しい内容は、Featured Workの「マチクエ」にまとめています。
                       </p>
                     </div>
                   </div>
@@ -676,34 +548,90 @@ export default function Home() {
             </div>
             <div className="section-body">
               <p data-reveal className="section-note">
-                その他の制作・構想。進行度合いはそれぞれ異なります。
+                制作中・試作中・構想段階のものです。完成したサービスではありません。
               </p>
               <div className="other-grid">
+                <article id="work-oboeko" className="other-card other-card--wide expandable" data-reveal>
+                  <div className="other-top">
+                    <h3>おぼえこ</h3>
+                    <span className="status-pill status-pill--sm">制作中</span>
+                  </div>
+                  <p>
+                    AIを活用して制作中の暗記学習アプリです。授業などで覚えたい内容を、一問一答で繰り返し確認できる仕組みを目指しています。
+                  </p>
+                  <div id="oboeko-detail" className="expandable-body" hidden>
+                    <div className="expandable-inner">
+                      <div className="proj-group">
+                        <span className="featured-group-label">制作の進め方</span>
+                        <p className="featured-detail-text">
+                          コードの作成はAIに任せ、作りたい内容や変更点を自分で伝えながら制作しています。
+                        </p>
+                      </div>
+                      <div className="proj-group">
+                        <span className="featured-group-label">試作版でできること</span>
+                        <ul className="mini-list">
+                          <li>デッキの作成・編集・削除</li>
+                          <li>問題の手入力（表・裏・補足）</li>
+                          <li>苦手なカードを優先した確認モード</li>
+                          <li>1日の目標枚数と連続学習日数の記録</li>
+                          <li>学習データの書き出し・読み込み（バックアップ用ファイル）</li>
+                        </ul>
+                      </div>
+                      <div className="proj-group">
+                        <span className="featured-group-label">今後の構想（未実装）</span>
+                        <ul className="mini-list">
+                          <li>忘却のタイミングに合わせた復習日の自動計算</li>
+                          <li>写真やPDFからの問題作成</li>
+                          <li>SPI・CABなど適性検査形式への対応</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="other-links">
+                    <a href="https://oboeko.lolipop-now.app/" target="_blank" rel="noopener noreferrer">
+                      試作版を試す
+                    </a>
+                    <a href="https://github.com/Rita8300/oboeko" target="_blank" rel="noopener noreferrer">
+                      GitHubでコードを見る
+                    </a>
+                    <button
+                      type="button"
+                      className="exp-toggle"
+                      data-toggle
+                      data-label="詳しく見る"
+                      aria-expanded="false"
+                      aria-controls="oboeko-detail"
+                    >
+                      <span className="toggle-label">詳しく見る</span>
+                      <span className="toggle-chevron" aria-hidden="true" />
+                    </button>
+                  </div>
+                </article>
                 <article className="other-card" data-reveal>
                   <div className="other-top">
                     <h3>TOEIC英単語学習ツール</h3>
-                    <span className="status-pill status-pill--sm">Prototype</span>
+                    <span className="status-pill status-pill--sm">試作中</span>
                   </div>
                   <p>Excelを使って英単語を反復学習できる仕組みを制作。自分の学習の不便を出発点にした個人用ツール。</p>
                 </article>
                 <article className="other-card" data-reveal>
                   <div className="other-top">
                     <h3>配信支援アプリ</h3>
-                    <span className="status-pill status-pill--sm">Experiment</span>
+                    <span className="status-pill status-pill--sm">試作中</span>
                   </div>
-                  <p>ニコニコ生放送などを想定し、コメントやギフトのランキングを表示する試作。Node.jsでローカル動作を確認。</p>
+                  <p>ニコニコ生放送などを想定し、コメントやギフトのランキングを表示するアプリの試作。自分のパソコン上で動作を確認した段階です。</p>
                 </article>
                 <article className="other-card" data-reveal>
                   <div className="other-top">
                     <h3>大学授業・単位案内Bot</h3>
-                    <span className="status-pill status-pill--sm">Concept</span>
+                    <span className="status-pill status-pill--sm">構想段階</span>
                   </div>
                   <p>大学の学修ガイドを読み込ませ、授業や単位に関する質問に答えるBotの構想。</p>
                 </article>
                 <article className="other-card" data-reveal>
                   <div className="other-top">
                     <h3>法学部学生向けDiscordコミュニティ</h3>
-                    <span className="status-pill status-pill--sm">Concept</span>
+                    <span className="status-pill status-pill--sm">構想段階</span>
                   </div>
                   <p>法学部の学生が授業情報や過去問を共有できるコミュニティの設計。</p>
                 </article>
@@ -717,40 +645,23 @@ export default function Home() {
               <span aria-hidden="true" className="index">
                 05
               </span>
-              <h2>Skills</h2>
+              <h2>Tools</h2>
             </div>
             <div className="section-body">
               <div className="skill-groups">
                 <div className="skill-group" data-reveal>
-                  <h3>Frontend</h3>
-                  <ul className="chips">
-                    <li>React</li>
-                    <li>TypeScript</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Vite</li>
-                  </ul>
-                  <p className="skill-use">WebアプリのUI設計・実装に使用。</p>
-                </div>
-                <div className="skill-group" data-reveal>
-                  <h3>AI-assisted Development</h3>
+                  <h3>使用ツール</h3>
                   <ul className="chips">
                     <li>ChatGPT</li>
-                    <li>Claude</li>
-                    <li>Codex</li>
+                    <li>Claude Code</li>
                   </ul>
-                  <p className="skill-use">企画整理、仕様作成、実装補助、デバッグ、アイデア検証などに活用。</p>
-                </div>
-                <div className="skill-group" data-reveal>
-                  <h3>Prototype / Other</h3>
-                  <ul className="chips">
-                    <li>Python</li>
-                    <li>Node.js</li>
-                    <li>Expo</li>
-                    <li>Excel</li>
-                  </ul>
-                  <p className="skill-use">小規模なツールやアプリの試作に使用。</p>
+                  <p className="skill-use">文章や企画の整理、Webサイトやアプリの制作に活用しています。</p>
+                  <p className="skill-use">
+                    コードの作成はAIに任せ、作りたい内容や変更点を伝えながら制作を進めています。
+                  </p>
+                  <p className="skill-use">
+                    今後はプログラミングの基礎から学び、自分でもコードを理解し、書けるようになることを目指しています。
+                  </p>
                 </div>
               </div>
             </div>
@@ -767,9 +678,10 @@ export default function Home() {
             <div className="section-body">
               <ul data-reveal className="fact-list">
                 <li>福岡大学 法学部（会社法ゼミ）</li>
-                <li>Web制作やサービス企画に取り組んでいる</li>
+                <li>AIを活用したWeb制作やサービス企画に取り組んでいる</li>
                 <li>大学では歴史学研究会の活動にも参加</li>
                 <li>技術だけでなく、企画やユーザー体験にも関心がある</li>
+                <li>趣味として、ニコニコ生放送で顔出し配信をしています</li>
               </ul>
               <p data-reveal className="about-note">
                 IT業界を志望していて、まず手を動かして試すことを大事にしている。
