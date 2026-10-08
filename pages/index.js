@@ -174,7 +174,7 @@ export default function Home() {
           name="description"
           content="福岡大学法学部の学生。AIを活用したWeb制作やサービス企画に取り組んでいます。新規事業企画「マチクエ」、歴史学研究会の運営などをまとめたポートフォリオです。"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#fbfaf7" />
         <meta name="color-scheme" content="light" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta property="og:type" content="website" />
@@ -195,9 +195,9 @@ export default function Home() {
             宮本琉太
           </a>
           <nav className="topnav">
-            <a href="#work">Work</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+            <a href="#work">制作</a>
+            <a href="#experience">経験</a>
+            <a href="#contact">連絡先</a>
           </nav>
         </header>
 
@@ -230,10 +230,7 @@ export default function Home() {
           {/* ===== 01 Key Results ===== */}
           <section id="highlights" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                01
-              </span>
-              <h2>Key Results</h2>
+              <h2>主な実績</h2>
             </div>
             <div className="section-body">
               <div className="highlight-grid">
@@ -269,39 +266,14 @@ export default function Home() {
           {/* ===== 02 Featured Works ===== */}
           <section id="work" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                02
-              </span>
-              <h2>Featured Work</h2>
+              <h2>制作</h2>
             </div>
             <div className="section-body">
               <div className="featured-list">
                 {/* --- MachiQuest --- */}
                 <article id="work-machiquest" className="featured expandable" data-reveal style={{ '--reveal-delay': '90ms' }}>
-                  <div className="mock mock--machiquest" aria-hidden="true">
-                    <div className="mock-topbar mock-topbar--dark">
-                      <span />
-                      <span />
-                      <span />
-                    </div>
-                    <div className="mock-mq-body">
-                      <p className="mock-mq-kicker">IT企業 サマーインターン ／ 新規事業ワーク</p>
-                      <p className="mock-mq-title">個人店の集客 × ゲーミフィケーション</p>
-                      <p className="mock-mq-name">
-                        マチクエ
-                        <span>MACHI QUEST</span>
-                      </p>
-                      <ul className="mock-mq-icons">
-                        <li>クエスト</li>
-                        <li>経験値</li>
-                        <li>制覇マップ</li>
-                        <li>連続来街ボーナス</li>
-                      </ul>
-                    </div>
-                  </div>
                   <div className="featured-body">
                     <div className="featured-top">
-                      <span className="featured-no">01</span>
                       <h3>マチクエ（MachiQuest）</h3>
                       <span className="status-pill">新規事業の企画案</span>
                       <span className="status-pill status-pill--award">インターン優秀賞</span>
@@ -394,10 +366,7 @@ export default function Home() {
           {/* ===== 03 Experience ===== */}
           <section id="experience" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                03
-              </span>
-              <h2>Experience</h2>
+              <h2>経験</h2>
             </div>
             <div className="section-body">
               <div className="exp-grid">
@@ -518,7 +487,7 @@ export default function Home() {
                         <li>SIer</li>
                       </ul>
                       <p className="featured-detail-text">
-                        参加したインターンの業種です（社名は伏せています）。企画の詳しい内容は、Featured Workの「マチクエ」にまとめています。
+                        参加したインターンの業種です（社名は伏せています）。企画の詳しい内容は、「制作」の「マチクエ」にまとめています。
                       </p>
                     </div>
                   </div>
@@ -541,10 +510,7 @@ export default function Home() {
           {/* ===== 04 Other Works ===== */}
           <section id="other-works" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                04
-              </span>
-              <h2>Other Works</h2>
+              <h2>試作・構想</h2>
             </div>
             <div className="section-body">
               <p data-reveal className="section-note">
@@ -591,7 +557,7 @@ export default function Home() {
                     <a href="https://oboeko.lolipop-now.app/" target="_blank" rel="noopener noreferrer">
                       試作版を試す
                     </a>
-                    <a href="https://github.com/Rita8300/oboeko" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/moegi1023/oboeko" target="_blank" rel="noopener noreferrer">
                       GitHubでコードを見る
                     </a>
                     <button
@@ -642,16 +608,12 @@ export default function Home() {
           {/* ===== 05 Skills ===== */}
           <section id="skills" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                05
-              </span>
-              <h2>Tools</h2>
+              <h2>ツール</h2>
             </div>
             <div className="section-body">
               <div className="skill-groups">
                 <div className="skill-group" data-reveal>
-                  <h3>使用ツール</h3>
-                  <ul className="chips">
+                                    <ul className="chips">
                     <li>ChatGPT</li>
                     <li>Claude Code</li>
                   </ul>
@@ -670,10 +632,7 @@ export default function Home() {
           {/* ===== 06 About ===== */}
           <section id="about" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                06
-              </span>
-              <h2>About</h2>
+              <h2>自己紹介</h2>
             </div>
             <div className="section-body">
               <ul data-reveal className="fact-list">
@@ -694,10 +653,7 @@ export default function Home() {
           {/* ===== 07 Contact ===== */}
           <section id="contact" className="section">
             <div data-reveal className="section-head">
-              <span aria-hidden="true" className="index">
-                07
-              </span>
-              <h2>Contact</h2>
+              <h2>連絡先</h2>
             </div>
             <div className="section-body">
               <p data-reveal className="section-note">
