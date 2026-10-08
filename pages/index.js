@@ -238,7 +238,7 @@ export default function Home() {
             <div className="section-body">
               <div className="highlight-grid">
                 <div className="highlight-card" data-reveal>
-                  <span className="highlight-eyebrow">配信活動</span>
+                  <span className="highlight-eyebrow">配信活動（2023年から継続）</span>
                   <strong className="highlight-stat">15位入賞</strong>
                   <p>
                     ニコニコ生放送の「年末年始 駅サイネージ出演イベント」（2025年開催）で15位に入賞し、駅のサイネージ広告に掲載されました。
@@ -681,7 +681,9 @@ export default function Home() {
                 <li>AIを活用したWeb制作やサービス企画に取り組んでいる</li>
                 <li>大学では歴史学研究会の活動にも参加</li>
                 <li>技術だけでなく、企画やユーザー体験にも関心がある</li>
-                <li>趣味として、ニコニコ生放送で顔出し配信をしています</li>
+                <li>
+                  趣味として、2023年からの3年間、ニコニコ生放送で顔出し配信を続けています。普段は雑談が中心で、山手線を1周する配信など、企画も行っています
+                </li>
               </ul>
               <p data-reveal className="about-note">
                 IT業界を志望していて、まず手を動かして試すことを大事にしている。
