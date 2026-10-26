@@ -173,6 +173,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{c.meta.title}</title>
         <meta name="description" content={c.meta.description} />
+        {c.meta.noindex && <meta name="robots" content="noindex, nofollow" />}
         <meta name="theme-color" content="#fbfaf7" />
         <meta name="color-scheme" content="light" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
