@@ -716,3 +716,10 @@ button:focus-visible {
     transition: none;
   }
 }
+
+/* ---------- 追加セクションの導入文 ---------- */
+.section-lead {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  line-height: 1.95;
+}
